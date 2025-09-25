@@ -16,14 +16,13 @@ ll dy[] = {0, 0, 1, -1, 1, -1, 1, -1};
 template <typename T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-using u64 = unsigned long long;
-using u128 = __uint128_t;
-
-u64 modmul(u64 a, u64 b, u64 m) {
-    return (u128)a * b % m;
+using i64 = unsigned long long;
+using i128 = __uint128_t;
+i64 modmul(i64 a, i64 b, i64 m) {
+    return (i128)a * b % m;
 }
-u64 modpow(u64 a, u64 d, u64 m) {
-    u64 r = 1;
+i64 modpow(i64 a, i64 d, i64 m) {
+    i64 r = 1;
     while (d) {
         if (d & 1) r = modmul(r, a, m);
         a = modmul(a, a, m);
@@ -31,19 +30,20 @@ u64 modpow(u64 a, u64 d, u64 m) {
     }
     return r;
 }
-bool isPrime(u64 n) {
+bool isPrime(i64 n) {
     if (n < 2) return false;
-    for (u64 p : {2,3,5,7,11,13,17,19,23,29,31,37}) {
+    for (i64 p : {2,3,5,7,11,13,17,19,23,29,31,37}) {
         if (n % p == 0) return n == p;
     }
-    u64 d = n-1, s = 0;
+    i64 d = n-1, s = 0;
     while ((d & 1) == 0) { d >>= 1; s++; }
-    for (u64 a : {2,325,9375,28178,450775,9780504,1795265022}) {
+    
+    for (i64 a : {2,325,9375,28178,450775,9780504,1795265022}) {
         if (a % n == 0) continue;
-        u64 x = modpow(a, d, n);
+        i64 x = modpow(a, d, n);
         if (x == 1 || x == n-1) continue;
         bool comp = true;
-        for (u64 r=1; r<s; r++) {
+        for (i64 r=1; r<s; r++) {
             x = modmul(x, x, n);
             if (x == n-1) { comp = false; break; }
         }
