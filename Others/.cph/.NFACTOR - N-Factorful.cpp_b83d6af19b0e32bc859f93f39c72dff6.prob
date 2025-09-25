@@ -1,0 +1,1 @@
+{"name":"Local: NFACTOR - N-Factorful","url":"d:\\CODE\\My_Work\\Others\\NFACTOR - N-Factorful.cpp","tests":[{"id":1758768341273,"input":"5\n1 3 1\n1 10 2\n1 10 3\n1 100 3\n1 1000 0","output":"2\n2\n0\n8\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CODE\\My_Work\\Others\\NFACTOR - N-Factorful.cpp","group":"local","local":true}
