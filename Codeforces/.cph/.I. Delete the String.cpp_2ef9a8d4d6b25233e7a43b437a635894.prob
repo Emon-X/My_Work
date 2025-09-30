@@ -1,0 +1,1 @@
+{"name":"Local: I","url":"d:\\CODE\\My_Work\\Codeforces\\I. Delete the String.cpp","tests":[{"id":1759078669288,"input":"4\n6\nacabdb\n4\naaaa\n18\nabcdaecfacgahciajc\n15\nabcdaefcghijcki\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CODE\\My_Work\\Codeforces\\I. Delete the String.cpp","group":"local","local":true}

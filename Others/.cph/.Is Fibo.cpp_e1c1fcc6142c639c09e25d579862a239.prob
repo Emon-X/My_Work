@@ -1,0 +1,1 @@
+{"name":"Local: Is Fibo","url":"d:\\CODE\\My_Work\\Others\\Is Fibo.cpp","tests":[{"id":1759123603933,"input":"3       \n5       \n7 \n8 ","output":"IsFibo\nIsNotFibo\nIsFibo"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CODE\\My_Work\\Others\\Is Fibo.cpp","group":"local","local":true}
