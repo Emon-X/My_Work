@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"d:\\CODE\\My_Work\\Codeforces\\C. Mail Stamps.cpp","tests":[{"id":1759297112290,"input":"2\n1 100\n100 2","output":""},{"id":1759297130219,"input":"3\n3 1\n100 2\n3 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CODE\\My_Work\\Codeforces\\C. Mail Stamps.cpp","group":"local","local":true}
